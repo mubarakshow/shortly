@@ -8,15 +8,16 @@ $veryDarkViolet: hsl(260, 8%, 14%);
 
 :root {
   // Primary Colors
-  --app-color-primary-light: $cyan;
-  --app-color-primary-dark: $darkViolet;
+  --app-color-primary-light: hsl(180, 66%, 49%);
+  --app-color-primary-dark: hsl(257, 27%, 26%);
 
   // Secondary Colors
-  --app-color-secondary: $red;
+  --app-color-secondary: hsl(0, 87%, 67%);;
 
   // Netural Colors
-  --app-color-neutral-lighter: $gray;
-  --app-color-neutral-light: $grayishViolet;
-  --app-color-neutral-dark: $veryDarkBlue;
-  --app-color-neutral-darker: $darkViolet;
+  --app-color-neutral-light: hsl(257, 7%, 63%);
+  --app-color-neutral-lighter: hsl(0, 0%, 75%);
+  --app-color-neutral-lightest: hsl(230,25,95);
+  --app-color-neutral-dark: hsl(255, 11%, 22%);
+  --app-color-neutral-darker: hsl(260, 8%, 14%);
 }
