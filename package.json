@@ -1,0 +1,34 @@
+{
+  "name": "shortly",
+  "version": "1.0.0",
+  "description": "finn.auto frontend assesment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://finn-gmbh-tzhatj@git.codesubmit.io/finn-gmbh/reactjsnextjs-shortly-tzhatj"
+  },
+  "keywords": [
+    "nextjs",
+    "url-shortner",
+    "responsive-ui"
+  ],
+  "author": "mubarakshow",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^10.0.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.32.8"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "@types/react": "^17.0.2",
+    "typescript": "^4.2.2"
+  }
+}
