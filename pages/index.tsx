@@ -1,11 +1,9 @@
-import Head from "next/head";
+import NextHeader from "../components/NextHeader";
 
 function Home() {
   return (
     <div>
-      <Head>
-        <title>Shortly</title>
-      </Head>
+      <NextHeader />
       <main>
         <h1>Shortly</h1>
         <h3>The only url shortener you'll ever need</h3>
