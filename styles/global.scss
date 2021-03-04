@@ -1,1 +1,50 @@
-:root {}
+@import './partials/devices';
+@import './partials/variables';
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  text-rendering: geometricPrecision;
+  -webkit-font-somoothing: antialiased;
+  overflow-y: hidden;
+  min-height: 100vh;
+  background-color: var(--app-color-neutral-lightest);
+}
+
+html {
+  overflow-y: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:hover,
+a:visited {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+ line-height: 1em; 
+ padding: 0;
+ margin: 0;
+}
