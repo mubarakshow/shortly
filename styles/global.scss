@@ -1,20 +1,22 @@
-@import './partials/devices';
-@import './partials/variables';
+@import "./partials/devices";
+@import "./partials/variables";
 
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: 11pt;
   margin: 0;
   padding: 0;
   text-rendering: geometricPrecision;
   -webkit-font-somoothing: antialiased;
   overflow-y: hidden;
+  overflow-x: hidden;
   min-height: 100vh;
-  background-color: var(--app-color-neutral-lightest);
+  background-color: var(--app-color-neutral-white);
 }
 
 html {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 * {
@@ -36,6 +38,11 @@ button {
   border: 0 none;
   padding: 0;
   margin: 0;
+  background-color: antiquewhite;
+  padding: 0.7em 1.5em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 h1,
@@ -44,7 +51,7 @@ h3,
 h4,
 h5,
 p {
- line-height: 1em; 
- padding: 0;
- margin: 0;
+  line-height: 1em;
+  padding: 0;
+  margin: 0;
 }
