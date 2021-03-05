@@ -1,12 +1,13 @@
+import Navbar from "../components/Navbar/Navbar";
 import NextHeader from "../components/NextHeader";
 
 function Home() {
   return (
     <div>
       <NextHeader />
+      <Navbar />
       <main>
-        <h1>Shortly</h1>
-        <h3>The only url shortener you'll ever need</h3>
+        {/* HERO SECTION */}
       </main>
     </div>
   );

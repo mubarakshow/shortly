@@ -1,0 +1,29 @@
+@use "sass:color";
+
+.button {
+  transition: 1s;
+  color: white;
+  &__type {
+    &_normal {
+      border-radius: 7.9999px;
+    }
+    &_rounded {
+      border-radius: 100px;
+    }
+  }
+  &__color {
+    &_primary_light {
+      background-color: var(--app-color-primary-light);
+      &:hover {
+        background-color: color.scale(hsl(180, 66%, 49%), $lightness: 50%);
+      }
+    }
+    &_primary_dark {
+      background-color: var(--app-color-primary-dark);
+    }
+    &_secondary {
+      background-color: var(--app-color-secondary);
+
+    }
+  }
+}

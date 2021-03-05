@@ -1,0 +1,57 @@
+@import "../../styles/partials/devices";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    gap: 2em;
+    li {
+      color: var(--app-color-neutral-gray);
+      &:hover {
+        color: var(--app-color-neutral-dark);
+        transition: 500ms;
+      }
+    }
+  }
+  padding: 1.5em calc((100vw - 80%) / 2);
+  @include mobile-lg {
+  }
+  &__items_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5em;
+    .navbar__item {
+      &_logo {
+        display: flex;
+        // background-color: pink;
+        align-items: center;
+        img {
+
+          @include mobile-lg {
+            width: 100%;
+            max-width: 80%;
+          }
+        }
+      }
+      &_links {
+        @include mobile-lg {
+          display: none;
+        }
+        @include tablet {
+          display: none;
+        }
+      }
+    }
+  }
+  &__items_right {
+    display: flex;
+    gap: 2.5em;
+    align-items: center;
+    @include mobile-lg {
+      display: none;
+    }
+  }
+}
