@@ -1,13 +1,12 @@
-import Navbar from "../components/Navbar/Navbar";
 import NextHeader from "../components/NextHeader";
+import HomePage from './home'
 
 function Home() {
   return (
     <div>
       <NextHeader />
-      <Navbar />
       <main>
-        {/* HERO SECTION */}
+        <HomePage />
       </main>
     </div>
   );
