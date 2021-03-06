@@ -5,9 +5,10 @@ interface IButtonProps {
   text: string;
   color?: string;
   onClick?: ((event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void) | undefined;
+  size?: string;
 }
 
-export const ButtonRounded: React.FC<IButtonProps> = ({ text, color="primary_light", onClick }) => {
+export const ButtonRounded: React.FC<IButtonProps> = ({ text, color="primary_light", size, onClick }) => {
   return (
     <button
       className={
@@ -15,7 +16,9 @@ export const ButtonRounded: React.FC<IButtonProps> = ({ text, color="primary_lig
         " " +
         styles.button__type_rounded +
         " " +
-        styles[`button__color_${color}`]
+        styles[`button__color_${color}`] +
+        " " +
+        styles[`button__size_${size}`]
       }
       onClick={onClick}
     >
@@ -24,13 +27,15 @@ export const ButtonRounded: React.FC<IButtonProps> = ({ text, color="primary_lig
   );
 };
 
-export const Button: React.FC<IButtonProps> = ({ text, color="primary_light", onClick }) => {
+export const Button: React.FC<IButtonProps> = ({ text, color="primary_light", size, onClick }) => {
   return (
     <button
       className={
         `${styles.button} ${styles.button__type_normal}` +
         " " +
-        styles[`button__color_${color}`]
+        styles[`button__color_${color}`] +
+        " " +
+        styles[`button__size_${size}`]
       }
       onClick={onClick}
     >

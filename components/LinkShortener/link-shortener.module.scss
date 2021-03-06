@@ -1,0 +1,37 @@
+@import '../../styles/partials/devices';
+
+.shortener__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 80vw;
+  padding: 2rem 3rem;
+  border-radius: 7px;
+  background-color: var(--app-color-neutral-dark);
+  background-image: url('../../public/bg-shorten-desktop.svg');
+  position: relative;
+  bottom: 5rem;
+  .shortener_textfield {
+    flex: 1;
+    width: 100%;
+  }
+}
+
+@include tablet {
+  .shortener__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem 2em;
+    background-image: url('../../public/bg-shorten-mobile.svg');
+  }
+  .shortener_textfield {
+    flex: 1;
+    width: 100%;
+  }
+  .shortener_button {
+    width: 100%;
+  }
+}
