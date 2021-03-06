@@ -4,8 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 2rem calc((100vw - 80%) / 2);
   ul {
     display: flex;
+    font-weight: 500;
     gap: 2em;
     li {
       color: var(--app-color-neutral-gray);
@@ -15,7 +17,6 @@
       }
     }
   }
-  padding: 1.5em calc((100vw - 80%) / 2);
   @include mobile-lg {
   }
   &__items_left {

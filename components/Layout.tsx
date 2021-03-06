@@ -8,7 +8,7 @@ interface ILayoutProps {
 
 const Layout: React.FC<ILayoutProps> = ({ children }) => {
   return (
-    <div>
+    <div style={{height: 100}}>
       <Navbar />
       
       {children}

@@ -3,10 +3,10 @@ import styles from "./button.module.scss";
 
 interface IButtonProps {
   text: string;
-  color: string;
+  color?: string;
 }
 
-export const ButtonRounded: React.FC<IButtonProps> = ({ text, color }) => {
+export const ButtonRounded: React.FC<IButtonProps> = ({ text, color="primary_light" }) => {
   return (
     <button
       className={
@@ -22,7 +22,7 @@ export const ButtonRounded: React.FC<IButtonProps> = ({ text, color }) => {
   );
 };
 
-export const Button: React.FC<IButtonProps> = ({ text, color }) => {
+export const Button: React.FC<IButtonProps> = ({ text, color="primary_light" }) => {
   return (
     <button
       className={
