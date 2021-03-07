@@ -1,0 +1,39 @@
+.icon {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    &__color {
+      &_primary_light {
+        background-color: var(--app-color-primary-light);
+      }
+      &_primary_dark {
+        background-color: var(--app-color-primary-dark);
+      }
+    }
+  }
+  &__image {
+    width: auto;
+    height: 100%;
+    &__color {
+      &_primary_light {
+        svg {
+          path {
+            fill: var(--app-color-primary-light);
+          }
+        }
+      }
+      &_primary_dark {
+        svg {
+          path {
+            fill: var(--app-color-primary-dark);
+          }
+        }
+      }
+    }
+  }
+}

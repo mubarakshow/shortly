@@ -1,0 +1,46 @@
+@import "../../styles/partials/devices";
+
+.statsCard {
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 0 20px 20px;
+  border-radius: 10px;
+  gap: 1em;
+  &__icon {
+    position: absolute;
+    top: -30px;
+  }
+  &__text {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    &_description {
+      color: var(--app-color-neutral-light);
+      line-height: 1.6em;
+    }
+  }
+}
+
+@include tablet {
+  .statsCard {
+    max-width: 100%;
+    width: 100%;
+    &__icon {
+      left: 0;
+      right: 0;
+      margin-left: 0;
+      margin-right: 0;
+      left: 50%;
+      margin-left: -30px;
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+  }
+}

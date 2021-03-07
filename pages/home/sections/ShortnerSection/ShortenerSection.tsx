@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./shortner-section.module.scss";
 import LinkShortener from "../../../../components/LinkShortener/LinkShortener";
 import LinkHistory, { ILinkHistoryProps } from "../../../../components/LinksHistory/LinkHistory";
+import StatsCardList from "../../../../components/StatsCard/StatsCardList";
+import { cardData } from "../../../../components/StatsCard/card-data";
 
 // interface IShortnerSectionProps {
 //   shortenedLinksHistory: ILinkHistoryProps
@@ -38,7 +40,7 @@ const ShortenerSection: React.FC = () => {
           <p className="stats__texts_subtitle"></p>
         </div>
         <div className="stats__cards">
-          {/* <CardList cardsData={data} /> */}
+          <StatsCardList data={cardData} />
         </div>
       </section>
     </section>

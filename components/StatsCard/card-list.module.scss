@@ -1,0 +1,18 @@
+@import '../../styles/partials/devices';
+
+.cardList {
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    // background-color: aqua;
+    justify-items: center;
+    @include tablet {
+      flex-direction: column;
+      gap: 60px;
+      // align-self: center;
+      // background-color: violet;
+    }
+  }
+}

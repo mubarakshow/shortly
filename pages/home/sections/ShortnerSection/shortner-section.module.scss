@@ -5,6 +5,7 @@
   min-height: 30vw;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   padding: 2rem calc((100vw - 80%) / 2);
   margin-top: 4rem;
 }
