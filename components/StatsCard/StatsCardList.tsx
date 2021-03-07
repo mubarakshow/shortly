@@ -1,6 +1,6 @@
 import React from "react";
 import StatsCardItem, { IStatsCardProps } from "./StatsCardItem";
-import styles from './card-list.module.scss';
+import styles from "./card-list.module.scss";
 
 interface IStatsCardListProps {
   data: Array<IStatsCardProps>;
@@ -9,9 +9,10 @@ interface IStatsCardListProps {
 const StatsCardList: React.FC<IStatsCardListProps> = ({ data }) => {
   return (
     <div className={styles.cardList__container}>
-      {data.map((item) =>
+      {data.map((item, i) =>
         item ? (
           <StatsCardItem
+            key={i}
             iconImage={item.iconImage}
             iconBgColor={item.iconBgColor}
             iconColor={item.iconColor}
@@ -23,6 +24,7 @@ const StatsCardList: React.FC<IStatsCardListProps> = ({ data }) => {
           ""
         )
       )}
+      <div className={styles.cardList__container_line}></div>
     </div>
   );
 };

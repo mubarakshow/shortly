@@ -34,12 +34,16 @@ const ShortenerSection: React.FC = () => {
       </section>
 
       {/* ADVANCED STATS */}
-      <section className="shortner__section_stats">
-        <div className="stats__texs">
-          <h2 className="stats__texts_title"></h2>
-          <p className="stats__texts_subtitle"></p>
+      <section className={styles.shortner__section_stats}>
+        <div className={styles.stats__texts}>
+          <h2 className={styles.stats__texts_title}>
+            Advanced Statistics
+          </h2>
+          <p className={styles.stats__texts_subtitle}>
+            Track how your links are performing across the web with our advanced statistics dashboard.
+          </p>
         </div>
-        <div className="stats__cards">
+        <div className={styles.stats__cards}>
           <StatsCardList data={cardData} />
         </div>
       </section>

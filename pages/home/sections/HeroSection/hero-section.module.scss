@@ -20,11 +20,11 @@
         font-size: clamp(2rem, 10vw, 4.575rem);
       }
       &_subtitle {
-        font-weight: 500 !important;
+        // font-weight:  !important;
         width: 80%;
         color: var(--app-color-neutral-gray);
         padding-top: 1.5rem;
-        font-size: clamp(1rem, calc(10vw - 30%), 1.3rem);
+        font-size: clamp(1rem);
       }
     }
   }

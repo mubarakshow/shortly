@@ -1,18 +1,62 @@
-@import '../../styles/partials/devices';
+@import "../../styles/partials/devices";
 
 .cardList {
   &__container {
-    position: relative;
     display: flex;
     flex-direction: row;
-    gap: 5em;
-    // background-color: aqua;
+    justify-content: space-between;
     justify-items: center;
-    @include tablet {
+    position: relative;
+    > :nth-child(1) {
+      z-index: 90;
+      // background-color: yellow;
+    }
+    > :nth-child(2) {
+      z-index: 91;
+      // background-color: pink;
+      top: 2rem;
+    }
+    > :nth-child(3) {
+      z-index: 92;
+      top: 4rem;
+      // background-color: lightcoral;
+    }
+    &_line {
+      position: absolute;
+      border: 3px solid var(--app-color-primary-light);
+      padding: 0 30px;
+      width: 500px;
+      top: 50%;
+      left: 50%;
+      margin-left: -250px;
+      z-index: 0;
+    }
+  }
+}
+
+@include desktop-md {
+  .cardList {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+      &_line {
+        display: none;
+        // transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+@include tablet {
+  .cardList {
+    &__container {
       flex-direction: column;
       gap: 60px;
-      // align-self: center;
-      // background-color: violet;
+      &_line {
+        transform: rotate(90deg);
+        display: block;
+      }
     }
   }
 }
