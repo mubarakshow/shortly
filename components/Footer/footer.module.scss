@@ -39,6 +39,8 @@
 
 @include tablet {
   .footer {
+    display: flex;
+    flex-direction: column;
     // height: 60px;
     background-color: var(--app-color-neutral-darker);
     padding: 3rem calc((100vw - 80%) / 2);
