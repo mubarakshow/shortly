@@ -1,8 +1,66 @@
-.footer {
-  height: 60px;
-  background-color: var(--app-color-neutral-gray);
+@import "../../styles/partials/devices";
 
-  h1 {
-    color: white;
+.footer {
+  // height: 60px;
+  background-color: var(--app-color-neutral-darker);
+  padding: 3rem calc((100vw - 80%) / 2);
+  &__logo {
+   
+  }
+  &__links {
+    display: flex;
+    flex-direction: row;
+    ul {
+      color: var(--app-color-neutral-light);
+      > li:nth-child(1) {
+        color: white;
+        padding: 1em 0;
+        font-weight: 700;
+      }
+      li {
+        margin-top: 1em;
+      } 
+    }
+  }
+  &__icons {
+    ul {
+      gap: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+    }
+  }
+}
+
+@include tablet {
+  .footer {
+    // height: 60px;
+    background-color: var(--app-color-neutral-darker);
+    padding: 3rem calc((100vw - 80%) / 2);
+    &__logo {
+      display: flex;
+      justify-content: center;
+      color: white;
+    }
+    &__links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      // background-color: antiquewhite;
+      ul > li:nth-child(1) {
+        // background-color: lawngreen;
+      }
+    }
+    &__icons {
+      ul {
+        gap: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 }

@@ -14,6 +14,7 @@ const Layout: React.FC<ILayoutProps> = ({ children }) => {
       {children}
 
       {/* FOOTER GOES HERE */}
+      <Footer />
     </div>
   );
 };
