@@ -1,0 +1,17 @@
+@import '../../styles/partials/devices';
+
+.link__history_container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+  position: relative;
+  top: -3em;
+}
+
+@include tablet {
+  .link__history_container {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+}

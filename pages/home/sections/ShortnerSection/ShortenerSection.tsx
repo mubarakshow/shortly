@@ -1,8 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./shortner-section.module.scss";
 import LinkShortener from "../../../../components/LinkShortener/LinkShortener";
+import LinkHistory, { ILinkHistoryProps } from "../../../../components/LinksHistory/LinkHistory";
 
-const ShortenerSection = () => {
+// interface IShortnerSectionProps {
+//   shortenedLinksHistory: ILinkHistoryProps
+// }
+
+
+const ShortenerSection: React.FC = () => {
+  const [historyData, setHistoryData]= useState([])
+  
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem('shortLinks') || "{}");
+    setHistoryData(data)
+  }, [])
+
+  // Could be used to simulate realtime update.
+  // useEffect(() => {}, [historyData])
+  
   return (
     // LINK SHORTNER FORM & SHORTENED LINK HISTORY
     <section className={styles.shortner__section}>
@@ -11,7 +27,7 @@ const ShortenerSection = () => {
           <LinkShortener />
         </div>
         <div className={styles.shortner__history}>
-          
+          <LinkHistory data={historyData}  />
         </div>
       </section>
 

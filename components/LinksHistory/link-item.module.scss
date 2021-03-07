@@ -1,0 +1,54 @@
+@import '../../styles/partials/devices';
+
+.link__item {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  padding: 0.665rem 1.155rem;
+  border-radius: 4.999px;
+  display: flex;
+  &_original {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  &_shortened {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    P {
+      color: var(--app-color-primary-light);
+    }
+  }
+
+}
+
+@include tablet {
+  .link__item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0rem;
+    overflow-x: hidden;
+    &_original {
+      padding: 1em 0;
+      border-bottom: 2pt solid;
+      border-color: var(--app-color-bg-light);
+      p {
+        padding: 0 0.755rem;
+      }
+    }
+    &_shortened {
+      // background-color: pink;
+      display: flex;
+      flex-direction: column;
+      align-items: unset;
+      gap: 0.8em;
+      padding: 1em 0.755rem;
+      P {
+        float: left;
+        color: var(--app-color-primary-light);
+      }
+    }
+  
+  }
+}

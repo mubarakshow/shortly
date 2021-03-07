@@ -1,5 +1,5 @@
 import NextHeader from "../components/NextHeader";
-import HomePage from './home'
+import HomePage from './home/index'
 
 function Home() {
   return (

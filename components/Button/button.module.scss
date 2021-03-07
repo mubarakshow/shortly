@@ -23,7 +23,12 @@
     }
     &_secondary {
       background-color: var(--app-color-secondary);
-
+    }
+    &_neutral_dark {
+      background-color: var(--app-color-neutral-dark);
+    }
+    &_neutral_darker {
+      background-color: var(--app-color-neutral-daker);
     }
   }
   &__size {

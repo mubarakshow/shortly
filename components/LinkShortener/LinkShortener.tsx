@@ -3,7 +3,7 @@ import { Button } from "../Button/Button";
 import { TextField } from "../Form/TextField";
 import styles from "./link-shortener.module.scss";
 
-const ShortenLink = () => {
+const LinkShortener = () => {
   const [value, setValue] = useState<string>("");
 
   return (
@@ -56,4 +56,4 @@ const ShortenLink = () => {
   );
 };
 
-export default ShortenLink;
+export default LinkShortener;
