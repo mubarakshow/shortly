@@ -1,15 +1,19 @@
 @import "../../styles/partials/devices";
 
 .footer {
+  display: grid;
+  grid-template-columns: 2fr 2fr auto;
   // height: 60px;
   background-color: var(--app-color-neutral-darker);
   padding: 3rem calc((100vw - 80%) / 2);
   &__logo {
-   
+    // flex: 1;
   }
   &__links {
     display: flex;
+    flex: 1;
     flex-direction: row;
+    justify-content: space-between;
     ul {
       color: var(--app-color-neutral-light);
       > li:nth-child(1) {
