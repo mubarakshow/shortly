@@ -1,0 +1,26 @@
+@import "../../../../styles/partials/devices";
+
+.boost__container {
+  background-image: url("../../../../public/bg-boost-desktop.svg");
+  background-size: cover;
+  background-color: var(--app-color-neutral-dark);
+  padding: 3em 2rem;
+  &_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h2 {
+      color: white;
+      margin-bottom: 1.2rem;
+    }
+  }
+}
+
+@include tablet {
+  .boost__container {
+    background-image: url("../../../../public/bg-boost-mobile.svg");
+    background-size: cover;
+  }
+}

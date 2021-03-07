@@ -4,6 +4,7 @@ import HeroSection from "./sections/HeroSection/HeroSection";
 import ShortenerSection from "./sections/ShortnerSection/ShortenerSection";
 import { useEffect, useRef } from "react";
 import { link } from "fs";
+import BoostSection from "./sections/BoostSection/BoostSection";
 
 // export const getStaticProps = async () => {
 //   const linkHistory = await JSON.parse(localStorage.getItem('shortLinks') || "{}");
@@ -20,6 +21,7 @@ const HomePage = () => {
     <Layout>
       <HeroSection />
       <ShortenerSection />
+      <BoostSection />
     </Layout>
   );
 };

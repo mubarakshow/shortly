@@ -11,6 +11,7 @@
   border-radius: 7px;
   background-color: var(--app-color-neutral-dark);
   background-image: url('../../public/bg-shorten-desktop.svg');
+  background-size: cover;
   position: relative;
   bottom: 5rem;
   .shortener_textfield {
@@ -26,6 +27,7 @@
     gap: 10px;
     padding: 1rem 2em;
     background-image: url('../../public/bg-shorten-mobile.svg');
+    background-size: contain;
   }
   .shortener_textfield {
     flex: 1;
