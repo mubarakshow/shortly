@@ -1,11 +1,16 @@
 import React from "react";
 import styles from "./footer.module.scss";
+import Logo from '../../public/logo.svg';
+import TwitterIcon from '../../public/icon-twitter.svg';
+import FacebookIcon from '../../public/icon-facebook.svg';
+import InstagramIcon from '../../public/icon-instagram.svg';
+import PinterestIcon from '../../public/icon-pinterest.svg';
 
 const Footer: React.FC = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.footer__logo}>
-        <img src="/logo.svg" alt="shortly logo" />
+        {<Logo />}
       </div>
       <div className={styles.footer__links}>
         <ul className={styles.footer__links_features}>
@@ -31,16 +36,16 @@ const Footer: React.FC = () => {
       <div className={styles.footer__icons}>
         <ul>
           <li>
-            <img src="/icon-facebook.svg" alt="shortly facebook page" />
+            {<FacebookIcon />}
           </li>
           <li>
-            <img src="/icon-twitter.svg" alt="shortly twitter page" />
+            {<TwitterIcon />}
           </li>
           <li>
-            <img src="/icon-pinterest.svg" alt="shortly pinterest page" />
+            {<PinterestIcon />}
           </li>
           <li>
-            <img src="/icon-instagram.svg" alt="shortly instagram page" />
+            {<InstagramIcon />}
           </li>
         </ul>
       </div>

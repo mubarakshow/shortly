@@ -7,7 +7,9 @@
   background-color: var(--app-color-neutral-darker);
   padding: 3rem calc((100vw - 80%) / 2);
   &__logo {
-    // flex: 1;
+    svg>path {
+      fill: white;
+    }
   }
   &__links {
     display: flex;
@@ -33,6 +35,9 @@
       justify-content: center;
       align-items: center;
       padding: 2em;
+      &>li>svg>path:hover {
+        fill: var(--app-color-primary-light);
+      }
     }
   }
 }
@@ -55,10 +60,6 @@
       justify-content: center;
       align-content: center;
       text-align: center;
-      // background-color: antiquewhite;
-      ul > li:nth-child(1) {
-        // background-color: lawngreen;
-      }
     }
     &__icons {
       ul {
