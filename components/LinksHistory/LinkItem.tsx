@@ -23,9 +23,10 @@ const LinkItem: React.FC<ILinkItemProp> = ({ originalLink, shortLink }) => {
           size="fullWidth"
           onClick={(e) => {
             setCopied(true);
+            navigator.clipboard.writeText(shortLink)
             setTimeout(() => {
               setCopied(false);
-            }, 5000);
+            }, 3000);
           }}
         />
       </div>

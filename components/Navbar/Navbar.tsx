@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./navbar.module.scss";
-import { ButtonRounded, Button } from '../Button/Button'
+import { ButtonRounded } from "../Button/Button";
+import MenuIcon from "../../public/icons-menu.svg";
 
 function Navbar() {
   return (
@@ -28,10 +29,13 @@ function Navbar() {
           <li>
             <Link href="/">Login</Link>
           </li>
+          <li>
+            <ButtonRounded text="Sign Up" color="primary_light" />
+          </li>
+          <li>
+            <MenuIcon />
+          </li>
         </ul>
-        <div>
-          <ButtonRounded text="Sign Up" color="primary_light" />
-        </div>
       </div>
     </nav>
   );
